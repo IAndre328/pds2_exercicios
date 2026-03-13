@@ -73,37 +73,32 @@ string extrair_palavra_atual(){
     return temp;
 }
 
-string comparar_string(string jogada, string gabarito, string* letras_erradas){
+string comparar_string(string jogada, string gabarito, string* letras_erradas) {
+    // Inicializa com '*' ou outro caractere neutro
+    string string_resultado = "*****"; 
 
-    string string_resultado = "*****";
-
-    for (int i = 0; i < TAM_MAX_PALAVRA; i++){
-        int index = gabarito.find(jogada[i]); 
-
-        if (index == i){
+    for (int i = 0; i < TAM_MAX_PALAVRA; i++) {
+        
+        // 1. LETRA NO LUGAR CERTO (Ex: VERDE)
+        if (jogada[i] == gabarito[i]) {
             string_resultado[i] = jogada[i];
-            // cout << string_resultado[i] << endl;
-        } else if (index < TAM_MAX_PALAVRA  && index > -1){
-            string_resultado[i] = (jogada[i] | 32);
-            // cout << string_resultado[i] << endl;
-        } else if (index == -1){
-
-            cout << letras_erradas->find(jogada[i]);
-            if (letras_erradas->find(jogada[i]) == -1)
-
+        } 
+        
+        // 2. LETRA EXISTE, MAS NO LUGAR ERRADO (Ex: AMARELO)
+        else if (gabarito.find(jogada[i]) != string::npos) {
+            // Transforma em minúscula para indicar "lugar errado"
+            string_resultado[i] = tolower(jogada[i]); 
+        } 
+        
+        // 3. LETRA NÃO EXISTE NO GABARITO (ERRO)
+        else {
+            // Verifica se já não adicionamos essa letra às erradas antes
+            if (letras_erradas->find(jogada[i]) == string::npos) {
                 *letras_erradas += jogada[i];
-            
-            // cout << "jogada errada: " << letras_erradas[0] << endl;
+            }
         }
-        // cout << "INDICE " << i << endl;
-    
     }
     
-    // for (int j = 0; j < TAM_MAX_PALAVRA; j++){
-    //     cout << string_resultado[j];
-    // }
-    // cout << endl;
-
     return string_resultado;
 }
 
