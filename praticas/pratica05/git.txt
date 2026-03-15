@@ -1,1 +1,13 @@
 Exercício focado no início de Git
+
+Enunciado
+
+O objetivo dessa atividade é praticar o uso de um sistema de controle de versão, especificamente o Git. Ao final, você deve ser capaz de entender os seguintes conceitos/comandos: commit, push/pull, branches, merge.
+
+Você viu o vídeo de controle de versões, certo? 👀 (https://youtu.be/iGo3NKHL1Ms?si=xrXobLWCyeiDqhjL)
+
+Esse exercício será feito utilizando-se o seguinte site: https://gitexercises.fracz.com/
+Além disso, você vai precisar de ter o comando git instalado no seu computador!
+
+O que deve ser feito:
+Leia a seção 'How to start?' e siga as instruções de cadastro usando seu NOME COMPLETO e Email (@ufmg). Atenção, se você não fizer o cadastro corretamente não será possível corrigir seu exercício!
