@@ -1,0 +1,1 @@
+Exercício focado no início de Git
