@@ -10,4 +10,4 @@ Esse exercício será feito utilizando-se o seguinte site: https://gitexercises.
 Além disso, você vai precisar de ter o comando git instalado no seu computador!
 
 O que deve ser feito:
-Leia a seção 'How to start?' e siga as instruções de cadastro usando seu NOME COMPLETO e Email (@ufmg). Atenção, se você não fizer o cadastro corretamente não será possível corrigir seu exercício!
+Leia a seção 'How to start?'  e siga as instruções de cadastro usando seu NOME COMPLETO e Email (@ufmg). Atenção, se você não fizer o cadastro corretamente não será possível corrigir seu exercício!
